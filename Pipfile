@@ -15,6 +15,7 @@ sphinx = "*"
 twine = "*"
 pytest = "*"
 pytest-runner = "*"
+pylint = "*"
 
 [packages]
 
