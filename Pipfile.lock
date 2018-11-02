@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dd3e2b3ace386d1b2b4656a5ae2b64024229382d8a952ffb2166c116605e9276"
+            "sha256": "1dd5d60b1a516dbfabc89644ff6696dafb1eb6fa9bc1b98809b36a647dcecf15"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -65,7 +65,7 @@
                 "sha256:9d98697f088eb1b0fa451391f91afb5e3ebde16bbdb272819fd091151fda4f1a",
                 "sha256:f0b0e4eba956de51238e17573b7087e852dfe9854afd2e9c873f73fc0ca0a6dd"
             ],
-            "markers": "python_version >= '2.6'",
+            "markers": "python_version == '2.7'",
             "version": "==1.5"
         },
         "bleach": {
@@ -96,6 +96,14 @@
                 "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
             ],
             "version": "==3.0.4"
+        },
+        "check-manifest": {
+            "hashes": [
+                "sha256:44e3cf4b0833a55460046bf7a3600eaadbcae5e9d13baf0c9d9789dd5c2c6452",
+                "sha256:728edbaccadaa86db0b8f876afac1fb90bce9452234753dfe4ef8fe786dcc2f1"
+            ],
+            "index": "pypi",
+            "version": "==0.37"
         },
         "colorama": {
             "hashes": [
@@ -164,6 +172,13 @@
                 "sha256:7a4bd47eaf6596e1295ecb11361139febe29b084a87bf005bf899f9a42edc3c6"
             ],
             "version": "==0.14"
+        },
+        "entrypoints": {
+            "hashes": [
+                "sha256:10ad569bb245e7e2ba425285b9fa3e8178a0dc92fc53b1e1c553805e15a8825b",
+                "sha256:d2d587dde06f99545fb13a383d2cd336a8ff1f359c5839ce3a64c917d10c029f"
+            ],
+            "version": "==0.2.3"
         },
         "enum34": {
             "hashes": [
@@ -236,6 +251,14 @@
                 "sha256:f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"
             ],
             "version": "==2.10"
+        },
+        "keyring": {
+            "hashes": [
+                "sha256:229ab6e4f1babf9e9dc02db36db291fe020795c8d584801a09450d3bef666a01",
+                "sha256:8a9b0c2c2abc3e7326559f840e1f05e6d010ccaf397d09f450485920ba08e443"
+            ],
+            "index": "pypi",
+            "version": "==16.0.0"
         },
         "lazy-object-proxy": {
             "hashes": [

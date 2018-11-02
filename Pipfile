@@ -18,6 +18,8 @@ pytest-runner = "*"
 pylint = "*"
 pytest-watch = "*"
 rope = "*"
+check-manifest = "*"
+keyring = "*"
 
 [packages]
 
