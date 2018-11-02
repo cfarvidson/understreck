@@ -22,7 +22,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: cfp2000
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: OqOIyXUyAlSV47Pq5m4UTQMCyV3auqzw3cTqfK6Im6RrcTJjASwZOzvgmZEt5Od83EXRY4szyte4NNWwpGW8orNtQoryB2Xbxad0BngX+wyWgclnaGwALdqIfw5ISlBwjASXoMsKt2sy0CQHSYn+LCBRtE7xBUnTvY3j/vHx/dj5ODHkjiFmdx+zF6N46Fq88OZBExca3jzT6POeuwom18oK1iwEIH1aB7W4PtCLUNbcftS5wNp/UUoy81ASHoIcKVapQXK25Ub2uOoqwHKNxH16JpxWhWbx49uUNCkp1XZYJtT+1ct2zXh3jzMWV+mkCPV6j5Qafc2QMTfTxOOTmOSh5cAQ6wHdTOcOLbJW60wCJrafM6Dwr4dgBnBbV6Y4goQ4M66Um7a7GP/55fX2Yh1+PQ/5TkqQqn6caBFP9UM9O5OIYwHwMs70b2Dv2SUsQejixH/mSwuTFbeKphj6ztF9qAaO2xbWsGQsrPTmquKN+HmCDiG7lFrxHgtmrARko2oFfWsMSFpopDIvPvmrRv8jShGrpOozbpwkfW3AhPS9Pwpe6OVmaKs39j9yGu1ApLO1upQFTVdQQ+3UsJgvuhMmxgc9Djr/H/zBnx7NBzbOyvixFRlOI8kQpdD1rT3/cw0O8mrZ85sFRpSPo+srS8vFGfNotLTNYRkwNAuoq9A=
   on:
     tags: true
     repo: cfp2000/understreck
