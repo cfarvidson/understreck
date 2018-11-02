@@ -64,11 +64,11 @@ Ready to contribute? Here's how to set up `understreck` for local development.
 
     $ git clone git@github.com:your_name_here/understreck.git
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy into a virtualenv. Assuming you have pipenv installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv understreck
     $ cd understreck/
-    $ python setup.py develop
+    $ pipenv sync --dev
+    $ pipenv run python setup.py develop
 
 4. Create a branch for local development::
 
@@ -79,11 +79,9 @@ Ready to contribute? Here's how to set up `understreck` for local development.
 5. When you're done making changes, check that your changes pass flake8 and the
    tests, including testing other Python versions with tox::
 
-    $ flake8 understreck tests
-    $ python setup.py test or py.test
-    $ tox
-
-   To get flake8 and tox, just pip install them into your virtualenv.
+    $ pipenv run flake8 understreck tests
+    $ pipenv run python setup.py test or py.test
+    $ pipenv run tox
 
 6. Commit your changes and push your branch to GitHub::
 
