@@ -16,6 +16,8 @@ twine = "*"
 pytest = "*"
 pytest-runner = "*"
 pylint = "*"
+pytest-watch = "*"
+rope = "*"
 
 [packages]
 
