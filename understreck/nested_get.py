@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from .exceptions import InvalidArgumentError
 
 
 def nested_get(input_dict, nested_key):
@@ -32,6 +33,3 @@ def nested_get(input_dict, nested_key):
             return None
     return internal_dict_value
 
-
-class InvalidArgumentError(Exception):
-    pass

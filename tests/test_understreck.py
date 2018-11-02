@@ -6,7 +6,7 @@ from __future__ import absolute_import
 import pytest
 
 
-from understreck import nested_get, InvalidArgumentError
+import understreck as _
 
 test_dictionary = {
     "the_top_level": {
@@ -36,22 +36,22 @@ test_dictionary = {
     ],
 )
 def test_nested_get(dict_to_test, key_to_get, expected):
-    result = nested_get(dict_to_test, key_to_get)
+    result = _.nested_get(dict_to_test, key_to_get)
     assert result == expected
 
 
 @pytest.mark.parametrize(
     "dict_to_test,key_to_get,expectedException",
     [
-        (None, "", InvalidArgumentError),
-        ("", "", InvalidArgumentError),
-        (1, "", InvalidArgumentError),
-        (test_dictionary, None, InvalidArgumentError),
-        (test_dictionary, {}, InvalidArgumentError),
-        (test_dictionary, 1, InvalidArgumentError),
+        (None, "", _.exceptions.InvalidArgumentError),
+        ("", "", _.exceptions.InvalidArgumentError),
+        (1, "", _.exceptions.InvalidArgumentError),
+        (test_dictionary, None, _.exceptions.InvalidArgumentError),
+        (test_dictionary, {}, _.exceptions.InvalidArgumentError),
+        (test_dictionary, 1, _.exceptions.InvalidArgumentError),
     ],
 )
 def test_nested_get_exceptions(dict_to_test, key_to_get, expectedException):
     print(expectedException)
     with pytest.raises(expectedException):
-        nested_get(dict_to_test, key_to_get)
+        _.nested_get(dict_to_test, key_to_get)
