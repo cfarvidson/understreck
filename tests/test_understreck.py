@@ -38,6 +38,8 @@ test_dictionary = {
 def test_nested_get(dict_to_test, key_to_get, expected):
     result = _.nested_get(dict_to_test, key_to_get)
     assert result == expected
+    result = _.get(dict_to_test, key_to_get)
+    assert result == expected
 
 
 @pytest.mark.parametrize(

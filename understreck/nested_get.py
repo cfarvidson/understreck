@@ -33,3 +33,5 @@ def nested_get(input_dict, nested_key):
             return None
     return internal_dict_value
 
+
+get = nested_get
