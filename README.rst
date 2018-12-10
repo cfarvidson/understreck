@@ -31,6 +31,7 @@ Features
 --------
 
 * Perform a safe get on a nested dictionary with the nested_get function
+* Split a list into chunks
 
 Nested Get example::
 
@@ -49,6 +50,13 @@ Nested Get example::
     # Using a list or tuple
     result = _.nested_get(test_dictionary, ["the_top_level", "second_level", "third_level"])  # result = "it works"
     result = _.nested_get(test_dictionary, ["the_top_level", "second_level", "DOES_NOT_EXIST"])  # result = None
+
+Chunks example::
+
+    import understreck as _
+
+    to_chunk = ["one", "two", "three", "four", "five"]
+    result = _.chunks.split(to_chunk, 2)  # result == [["one", "two", "three"], ["four", "five"]]
 
 Credits
 -------
