@@ -7,3 +7,4 @@ __email__ = "carl-fredrik@arvidson.io"
 __version__ = "__version__ = '0.2.0'"
 
 from .nested_get import nested_get, get
+from .chunks import *
