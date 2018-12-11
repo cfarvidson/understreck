@@ -14,11 +14,6 @@ Understreck
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/cfp2000/understreck/shield.svg
-     :target: https://pyup.io/repos/github/cfp2000/understreck/
-     :alt: Updates
-
-
 
 A collection of nice utility functions for python
 
