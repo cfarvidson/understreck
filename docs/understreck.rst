@@ -4,6 +4,14 @@ understreck package
 Submodules
 ----------
 
+understreck.chunks module
+-------------------------
+
+.. automodule:: understreck.chunks
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 understreck.exceptions module
 -----------------------------
 
