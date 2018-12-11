@@ -6,7 +6,7 @@ Understreck
 .. image:: https://img.shields.io/pypi/v/understreck.svg
         :target: https://pypi.python.org/pypi/understreck
 
-.. image:: https://img.shields.io/travis/cfp2000/understreck.svg
+.. image:: https://travis-ci.org/cfp2000/understreck.svg?branch=master
         :target: https://travis-ci.org/cfp2000/understreck
 
 .. image:: https://readthedocs.org/projects/understreck/badge/?version=latest
