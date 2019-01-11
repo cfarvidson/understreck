@@ -5,13 +5,14 @@ from .exceptions import InvalidArgumentError
 def nested_get(input_dict, nested_key):
     """Get a subkey from a dict
 
-    This will return a subkey from a dictionary. 
+    This will return a subkey from a dictionary.
     It solves a problem when having to perform safe get on nested dictionaries.
-    
+
     Arguments:
         input_dict {dict} -- The dictionary to perform the get on
-        nested_key {str, list, tuple} -- The key can be or dot delimited string or list/tuple.
-    
+        nested_key {str, list, tuple} -- The key can be or dot delimited string
+                                         or list/tuple.
+
     Returns:
         Object or None -- The value of the key or None
     """
