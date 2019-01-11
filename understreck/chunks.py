@@ -3,11 +3,11 @@ import math
 
 def calculate_size(to_chunk, num_chunks):
     """Calculate the max chunk size for each new chunk of a list.
-    
+
     Arguments:
         to_chunk {list} -- [description]
         num_chunks {int} -- [description]
-    
+
     Returns:
         int -- The max size for each chunk
     """
