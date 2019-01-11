@@ -1,16 +1,44 @@
 # Config file for automatic testing at travis-ci.org
 
 language: python
-python:
-  - 3.6
-  - 3.5
-  - 3.4
-  - 2.7
-  - pypy
-  - pypy3
+matrix:
+  fast_finish: true
 
-# Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
+  include:
+    - python: "2.7"
+      env: TOXENV=py27
+    - python: "3.4"
+      env: TOXENV=py34
+    - python: "3.5"
+      env: TOXENV=py35
+    - python: "3.6"
+      env: TOXENV=py36
+    - python: "pypy"
+      env: TOXENV=pypy
+    - python: "pypy3"
+      env: TOXENV=pypy3
+    - python: "3.7"
+      env: TOXENV=py37
+      dist: xenial
+      sudo: true
+
+    # Prevent breakage by a new releases
+    - python: "3.6-dev"
+      env: TOXENV=py36
+    - python: "3.7-dev"
+      env: TOXENV=py37
+
+    # Meta
+    - python: "3.6"
+      env: TOXENV=lint
+    - python: "3.6"
+      env: TOXENV=manifest
+
+  allow_failures:
+    - python: "3.6-dev"
+    - python: "3.7-dev"
+
+install: pip install tox
 
 # Command to run tests, e.g. python setup.py test
 script: tox

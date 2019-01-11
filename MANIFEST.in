@@ -9,3 +9,13 @@ recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
 recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-exclude docs _build _build/*
+
+include Makefile
+include Pipfile
+include Pipfile.lock
+include tox.ini
+
+exclude .editorconfig
+exclude .github
+exclude .github/ISSUE_TEMPLATE.md
