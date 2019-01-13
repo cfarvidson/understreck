@@ -2,6 +2,10 @@
 History
 =======
 
+Unreleased
+----------
+* Black formatting
+
 0.2.1 (2018-12-10)
 ------------------
 * Add Understreck.chunks
