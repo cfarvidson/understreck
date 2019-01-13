@@ -20,5 +20,9 @@ pytest-watch = "*"
 rope = "*"
 check-manifest = "*"
 keyring = "*"
+black = {version = ">=18.9b0", markers = "python_version >= '3.6'"}
 
 [packages]
+
+[pipenv]
+allow_prereleases = true
