@@ -4,26 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-pip = "==18.0"
 bumpversion = "*"
 wheel = "*"
 watchdog = "*"
-"flake8" = "*"
 tox = "*"
 coverage = "*"
 sphinx = "*"
 twine = "*"
 pytest = "*"
 pytest-runner = "*"
-pylint = "*"
 pytest-watch = "*"
-rope = "*"
 check-manifest = "*"
-keyring = "*"
-black = {version = ">=18.9b0", markers = "python_version >= '3.6'"}
-pyyaml = ">=4.2b1"
+
 
 [packages]
-
-[pipenv]
-allow_prereleases = true
