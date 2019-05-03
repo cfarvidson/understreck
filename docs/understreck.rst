@@ -20,10 +20,26 @@ understreck.exceptions module
     :undoc-members:
     :show-inheritance:
 
+understreck.filter module
+-------------------------
+
+.. automodule:: understreck.filter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 understreck.nested\_get module
 ------------------------------
 
 .. automodule:: understreck.nested_get
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+understreck.strip module
+------------------------
+
+.. automodule:: understreck.strip
     :members:
     :undoc-members:
     :show-inheritance:
