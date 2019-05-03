@@ -80,11 +80,12 @@ Strip indents example::
 
     import understreck as _
 
-    to_strip = """This is a
-    multi-line
-    string"""
+    def some_function():
+        to_strip = """This is a
+        multi-line
+        string"""
 
-    _.strip(to_strip)  # "This is a\nmulti-line\nstring"
+        _.strip(to_strip)  # "This is a\nmulti-line\nstring"
 
 Credits
 -------
