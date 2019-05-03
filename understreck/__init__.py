@@ -8,3 +8,4 @@ __version__ = "__version__ = '0.2.1'"
 
 from .nested_get import nested_get, get
 from .chunks import *
+from .filter import filter
