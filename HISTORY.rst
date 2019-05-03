@@ -4,6 +4,8 @@ History
 
 Unreleased
 ----------
+* Updated the travis button URL
+* Replaced nested_get with get in the README. (nested_get still works)
 * Black formatting
 
 0.2.1 (2018-12-10)

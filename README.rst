@@ -6,8 +6,8 @@ Understreck
 .. image:: https://img.shields.io/pypi/v/understreck.svg
         :target: https://pypi.python.org/pypi/understreck
 
-.. image:: https://travis-ci.org/cfp2000/understreck.svg?branch=master
-        :target: https://travis-ci.org/cfp2000/understreck
+.. image:: https://travis-ci.com/cfp2000/understreck.svg?branch=master
+        :target: https://travis-ci.com/cfp2000/understreck
 
 .. image:: https://readthedocs.org/projects/understreck/badge/?version=latest
         :target: https://understreck.readthedocs.io/en/latest/?badge=latest
@@ -41,12 +41,12 @@ Nested Get example::
     }
 
     # Using dot delimited strings
-    result = _.nested_get(test_dictionary, "the_top_level.second_level.third_level")  # result = "it works"
-    result = _.nested_get(test_dictionary, "the_top_level.second_level.DOES_NOT_EXIST")  # result = None
+    result = _.get(test_dictionary, "the_top_level.second_level.third_level")  # result = "it works"
+    result = _.get(test_dictionary, "the_top_level.second_level.DOES_NOT_EXIST")  # result = None
 
     # Using a list or tuple
-    result = _.nested_get(test_dictionary, ["the_top_level", "second_level", "third_level"])  # result = "it works"
-    result = _.nested_get(test_dictionary, ["the_top_level", "second_level", "DOES_NOT_EXIST"])  # result = None
+    result = _.get(test_dictionary, ["the_top_level", "second_level", "third_level"])  # result = "it works"
+    result = _.get(test_dictionary, ["the_top_level", "second_level", "DOES_NOT_EXIST"])  # result = None
 
 Chunks example::
 
