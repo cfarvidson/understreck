@@ -4,6 +4,7 @@ History
 
 Unreleased
 ----------
+* Adds Understreck.filter with inspired by https://lodash.com/docs/4.17.11#filter
 * Updated the travis button URL
 * Replaced nested_get with get in the README. (nested_get still works)
 * Black formatting

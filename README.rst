@@ -55,10 +55,34 @@ Chunks example::
     to_chunk = ["one", "two", "three", "four", "five"]
     result = _.chunks.split(to_chunk, 2)  # result == [["one", "two", "three"], ["four", "five"]]
 
+Filter Example::
+
+    import understreck as _
+
+    users = [
+            {"user": "barney", "age": 36, "active": True},
+            {"user": "fred", "age": 40, "active": False},
+        ]
+
+    # Using a lambda function
+    result = _.filter(users, lambda x: not x.get("active"))  # result == [{"user": "fred", "age": 40, "active": False}]
+
+    # Using partial dictionary
+    result = _.filter(users, {"age": 36, "active": True})  # result == [{"user": "barney", "age": 36, "active": True}]
+
+    # Using a list with a property name and value
+    result = _.filter(users, ["active", False])  # result == [{"user": "fred", "age": 40, "active": False}]
+
+    # Using a list with a property name. The value must be truthy.
+    result = _.filter(users, ["active"])  # result == [{"user": "barney", "age": 36, "active": True}]
+
 Credits
 -------
 
+I have to credit the Lodash_ project for inspiration!
+
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. _Lodash: https://lodash.com
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
