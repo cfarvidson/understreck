@@ -1,4 +1,32 @@
 def filter(to_filter, filter_to_apply):
+    """Filters a list or tuple
+
+    Examples:
+        users = [
+                {"user": "barney", "age": 36, "active": True},
+                {"user": "fred", "age": 40, "active": False},
+            ]
+
+        # Using a lambda function
+        result = _.filter(users, lambda x: not x.get("active"))
+        result == [{"user": "fred", "age": 40, "active": False}]
+
+        # Using partial dictionary
+        result = _.filter(users, {"age": 36, "active": True})
+        result == [{"user": "barney", "age": 36, "active": True}]
+
+        # Using a list with a property name and value
+        result = _.filter(users, ["active", False])
+        result == [{"user": "fred", "age": 40, "active": False}]
+
+        # Using a list with a property name. The value must be truthy.
+        result = _.filter(users, ["active"])
+        result == [{"user": "barney", "age": 36, "active": True}]
+
+    :param to_filter: the tuple or list to filter
+    :param filter_to_apply: A function or list that defies the filter
+    :return: A filtered list or tuple with the same type as to_filter
+    """
     type_to_return = type(to_filter)
 
     if hasattr(filter_to_apply, "__call__"):

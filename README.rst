@@ -55,7 +55,7 @@ Chunks example::
     to_chunk = ["one", "two", "three", "four", "five"]
     result = _.chunks.split(to_chunk, 2)  # result == [["one", "two", "three"], ["four", "five"]]
 
-Filter Example::
+Filter example::
 
     import understreck as _
 
