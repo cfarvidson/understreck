@@ -76,6 +76,16 @@ Filter example::
     # Using a list with a property name. The value must be truthy.
     result = _.filter(users, ["active"])  # result == [{"user": "barney", "age": 36, "active": True}]
 
+Strip indents example::
+
+    import understreck as _
+
+    to_strip = """This is a
+    multi-line
+    string"""
+
+    _.strip(to_strip)  # "This is a\nmulti-line\nstring"
+
 Credits
 -------
 

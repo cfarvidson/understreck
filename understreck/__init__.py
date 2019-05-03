@@ -9,3 +9,4 @@ __version__ = "0.3.0"
 from .nested_get import nested_get, get
 from .chunks import *
 from .filter import filter
+from .strip import strip

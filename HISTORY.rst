@@ -4,6 +4,7 @@ History
 
 Unreleased
 ----------
+* Adds Understreck.strip that strips indents
 
 0.3.0 (2019-05-03)
 ------------------
