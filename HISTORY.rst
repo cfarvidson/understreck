@@ -4,6 +4,9 @@ History
 
 Unreleased
 ----------
+
+0.5.0 (2019-05-03)
+------------------
 * Updates dev dependencies
 * Moves to the new repository
 
