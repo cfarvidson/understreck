@@ -46,7 +46,7 @@ setup(
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/cfp2000/understreck",
+    url="https://github.com/cfarvidson/understreck",
     version="0.4.0",
     zip_safe=False,
 )
