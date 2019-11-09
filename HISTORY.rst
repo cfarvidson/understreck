@@ -5,6 +5,10 @@ History
 Unreleased
 ----------
 
+0.5.1 (2019-11-09)
+------------------
+* Updates dev dependencies 
+
 0.5.0 (2019-05-03)
 ------------------
 * Updates dev dependencies
