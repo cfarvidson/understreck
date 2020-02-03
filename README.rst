@@ -17,6 +17,10 @@ Understreck
         :target: https://github.com/ambv/black
         :alt: Code style: black
 
+.. image:: https://pepy.tech/badge/understreck
+        :target: https://pepy.tech/project/understreck
+        :alt: downloads
+
 A collection of nice utility functions for python
 
 
