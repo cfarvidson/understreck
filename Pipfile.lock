@@ -107,11 +107,11 @@
         },
         "check-manifest": {
             "hashes": [
-                "sha256:42de6eaab4ed149e60c9b367ada54f01a3b1e4d6846784f9b9710e770ff5572c",
-                "sha256:78dd077f2c70dbac7cfcc9d12cbd423914e787ea4b5631de45aecd25b524e8e3"
+                "sha256:4046b1260e63c139be6441fe8db8d9221f495ff39b81add2a55e5ca35dde7a6a",
+                "sha256:88afe85b751717688f8bc3b63d9543d0d962da98f1f420c554eaeb8d76c571a8"
             ],
             "index": "pypi",
-            "version": "==0.40"
+            "version": "==0.41"
         },
         "colorama": {
             "hashes": [
@@ -302,6 +302,13 @@
                 "sha256:7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0"
             ],
             "version": "==0.1.2"
+        },
+        "pep517": {
+            "hashes": [
+                "sha256:5ce351f3be71d01bb094d63253854b6139931fcaba8e2f380c02102136c51e40",
+                "sha256:882e2eeeffe39ccd6be6122d98300df18d80950cb5f449766d64149c94c5614a"
+            ],
+            "version": "==0.8.1"
         },
         "pkginfo": {
             "hashes": [
