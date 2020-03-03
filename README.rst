@@ -33,24 +33,49 @@ Features
 
 * Perform a safe get on a nested dictionary with the nested_get function
 * Split a list into chunks
+* Filter a list of dictionaries
+* Strip indents from multiline strings
 
-Nested Get example::
+Examples
+--------
+
+Get example::
 
     import understreck as _
 
     test_dictionary = {
-        "the_top_level": {
-            "second_level": {"third_level": "it works", "third_level_sibling": False}
+        "foo": {
+            "second_level": {"third_level": "it works", "third_level_sibling": False},
+            "second_level_list": ["Hello", "World", {"planet": "Earth"}, ["Hello", "World", {"planet": "jupiter"}, ]],
         }
     }
 
     # Using dot delimited strings
-    result = _.get(test_dictionary, "the_top_level.second_level.third_level")  # result = "it works"
-    result = _.get(test_dictionary, "the_top_level.second_level.DOES_NOT_EXIST")  # result = None
+    result = _.get(test_dictionary, "foo.second_level.third_level")  # result == "it works"
+    result = _.get(test_dictionary, "foo.second_level.DOES_NOT_EXIST")  # result == None
 
     # Using a list or tuple
-    result = _.get(test_dictionary, ["the_top_level", "second_level", "third_level"])  # result = "it works"
-    result = _.get(test_dictionary, ["the_top_level", "second_level", "DOES_NOT_EXIST"])  # result = None
+    result = _.get(test_dictionary, ["foo", "second_level", "third_level"])  # result == "it works"
+    result = _.get(test_dictionary, ["foo", "second_level", "DOES_NOT_EXIST"])  # result == None
+
+    # Getting elements in list
+
+    result = _.get(test_dictionary, "foo.second_level_list[0]")  # result == "Hello"
+    result = _.get(test_dictionary, "foo.second_level_list[1]")  # result == "World"
+    result = _.get(test_dictionary, "foo.second_level_list[2].planet")  # result == "Earth"
+
+    # Getting a property in a nested list 
+    nested_list = {
+                    "foo": {
+                        "bar": [
+                            "x", [
+                                "first", "second", {"name": "Hello World"}
+                            ]
+                        ]
+                    }
+                  }
+
+    result = _.get(nested_list, "foo.bar[1][2].name")  # result == "Hello World"
 
 Chunks example::
 

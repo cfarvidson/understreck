@@ -2,6 +2,30 @@
 from .exceptions import InvalidArgumentError
 
 
+def _is_list(key):
+    return "[" in key
+
+
+def _strip_position(key):
+    return key.split("[")[0]
+
+
+def _get_positions(key):
+    key_without_name = key.split("[")[0]
+    positions_string = key.replace(key_without_name, "")
+    raw_positions = positions_string.split("]")
+    raw_positions = [x for x in raw_positions if x != ""]
+
+    positions = [_position(x) for x in raw_positions]
+    return positions
+
+
+def _position(key):
+    position = key.split("[")[-1]
+    position = position.split("]")[0]
+    return int(position)
+
+
 def nested_get(input_dict, nested_key):
     """Get a subkey from a dict
 
@@ -29,7 +53,17 @@ def nested_get(input_dict, nested_key):
 
     internal_dict_value = input_dict
     for k in normalized_nested_key:
-        internal_dict_value = internal_dict_value.get(k, None)
+        if _is_list(k):
+            # Handle chained lists
+            positions = _get_positions(k)
+            internal_dict_value = internal_dict_value.get(_strip_position(k), None)
+            for position in positions:
+                try:
+                    internal_dict_value = internal_dict_value[position]
+                except IndexError:
+                    return None
+        else:
+            internal_dict_value = internal_dict_value.get(k, None)
         if internal_dict_value is None:
             return None
     return internal_dict_value
