@@ -12,8 +12,8 @@ recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
 recursive-exclude docs _build _build/*
 
 include Makefile
-include Pipfile
-include Pipfile.lock
+include dev.in
+include dev.txt
 include tox.ini
 include *.toml
 

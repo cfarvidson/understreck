@@ -21,12 +21,16 @@ matrix:
       env: TOXENV=py37
       dist: xenial
       sudo: true
+    - python: "3.8"
+      env: TOXENV=py38
+      dist: xenial
+      sudo: true
 
     # Prevent breakage by a new releases
-    - python: "3.6-dev"
-      env: TOXENV=py36
-    - python: "3.7-dev"
-      env: TOXENV=py37
+    - python: "3.8-dev"
+      env: TOXENV=py38
+    - python: "3.9-dev"
+      env: TOXENV=py39
 
     # Meta
     - python: "3.6"
@@ -39,8 +43,8 @@ matrix:
       sudo: true
 
   allow_failures:
-    - python: "3.6-dev"
-    - python: "3.7-dev"
+    - python: "3.8-dev"
+    - python: "3.9-dev"
 
 install: pip install tox
 

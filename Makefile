@@ -91,3 +91,7 @@ install: clean ## install the package to the active Python's site-packages
 .PHONY: upload-test
 upload-test:
 	twine upload --repository testpypi dist/*
+
+.PHONY: lock
+lock:
+	pip-compile --output-file dev.txt dev.in
