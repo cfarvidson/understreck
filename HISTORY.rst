@@ -5,6 +5,10 @@ History
 Unreleased
 ----------
 
+1.0.0 (2020-03-03)
+------------------
+* Get elements from nested lists
+
 0.5.1 (2019-11-09)
 ------------------
 * Updates dev dependencies 
