@@ -16,7 +16,7 @@ check-manifest==0.41      # via -r dev.in
 click==7.0                # via pip-tools
 colorama==0.4.3           # via pytest-watch
 coverage==5.0.3           # via -r dev.in
-cryptography==2.8         # via secretstorage
+cryptography==3.2         # via secretstorage
 docopt==0.6.2             # via pytest-watch
 docutils==0.16            # via readme-renderer, sphinx
 filelock==3.0.12          # via tox
