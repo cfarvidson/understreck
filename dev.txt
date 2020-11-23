@@ -60,7 +60,7 @@ tqdm==4.42.0              # via twine
 twine==3.1.1              # via -r dev.in
 urllib3==1.25.8           # via requests
 virtualenv==16.7.9        # via tox
-watchdog==0.10.1          # via -r dev.in, pytest-watch
+watchdog==0.10.4          # via -r dev.in, pytest-watch
 wcwidth==0.1.8            # via pytest
 webencodings==0.5.1       # via bleach
 wheel==0.34.2             # via -r dev.in
