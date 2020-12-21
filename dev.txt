@@ -28,7 +28,6 @@ keyring==21.1.0           # via twine
 markupsafe==1.1.1         # via jinja2
 more-itertools==8.2.0     # via pytest
 packaging==20.1           # via pytest, sphinx, tox
-pathtools==0.1.2          # via watchdog
 pep517==0.8.1             # via check-manifest
 pip-tools==4.5.1          # via -r dev.in
 pkginfo==1.5.0.1          # via twine
@@ -60,7 +59,7 @@ tqdm==4.42.0              # via twine
 twine==3.1.1              # via -r dev.in
 urllib3==1.25.8           # via requests
 virtualenv==16.7.9        # via tox
-watchdog==0.10.1          # via -r dev.in, pytest-watch
+watchdog==1.0.2           # via -r dev.in, pytest-watch
 wcwidth==0.1.8            # via pytest
 webencodings==0.5.1       # via bleach
 wheel==0.34.2             # via -r dev.in
