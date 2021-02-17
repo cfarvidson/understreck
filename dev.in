@@ -5,7 +5,7 @@ pip-tools==4.5.1
 pytest-runner==5.2
 pytest-watch==4.2.0
 pytest==5.3.5
-sphinx==2.4.3
+sphinx==3.5.1
 tox==3.14.5
 twine==3.1.1
 watchdog==0.10.1
