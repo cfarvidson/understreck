@@ -12,7 +12,9 @@ babel==2.8.0
     # via sphinx
 bleach==3.1.4
     # via readme-renderer
-bumpversion==0.5.3
+bump2version==1.0.1
+    # via bumpversion
+bumpversion==0.6.0
     # via -r dev.in
 certifi==2019.11.28
     # via requests
@@ -83,25 +85,25 @@ pygments==2.5.2
     #   sphinx
 pyparsing==2.4.6
     # via packaging
-pytest-runner==5.2
-    # via -r dev.in
-pytest-watch==4.2.0
-    # via -r dev.in
 pytest==5.3.5
     # via
     #   -r dev.in
     #   pytest-watch
+pytest-runner==5.2
+    # via -r dev.in
+pytest-watch==4.2.0
+    # via -r dev.in
 pytz==2019.3
     # via babel
 readme-renderer==24.0
-    # via twine
-requests-toolbelt==0.9.1
     # via twine
 requests==2.22.0
     # via
     #   requests-toolbelt
     #   sphinx
     #   twine
+requests-toolbelt==0.9.1
+    # via twine
 secretstorage==3.1.2
     # via keyring
 six==1.14.0
