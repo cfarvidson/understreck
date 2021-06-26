@@ -1,4 +1,4 @@
-bumpversion==0.5.3
+bumpversion==0.6.0
 check-manifest==0.41
 coverage==5.0.3
 pip-tools==4.5.1
