@@ -1,7 +1,7 @@
 bumpversion==0.5.3
 check-manifest==0.41
 coverage==5.0.3
-pip-tools==4.5.1
+pip-tools==6.9.0
 pytest-runner==5.2
 pytest-watch==4.2.0
 pytest==5.3.5
